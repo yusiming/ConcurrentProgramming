@@ -6,7 +6,7 @@ package keywordSynchronized;
  * @Auther yusiming
  * @Date 2019/2/28 19:42
  */
-public class GoodProgram {
+public class GoodProgram1 {
     private int count = 10;
     private Object o = new Object();
 
@@ -22,7 +22,7 @@ public class GoodProgram {
     }
 
     public static void main(String[] args) {
-        GoodProgram gd = new GoodProgram();
+        GoodProgram1 gd = new GoodProgram1();
         for (int i = 0; i < 5; i++) {
             new Thread(gd::increase).start();
         }
