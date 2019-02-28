@@ -1,4 +1,4 @@
-package keywordSynchronized;
+package sleepMethod;
 
 /**
  * sleep()方法不会释放锁，所以要小心了，

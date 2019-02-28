@@ -10,7 +10,7 @@ package keywordSynchronized;
  * @Auther yusiming
  * @Date 2019/2/28 20:50
  */
-public class ReentrantSynchronizedLock {
+public class ReentrantSynchronizedLock1 {
     public synchronized void fun1() {
         System.out.println("fun1 start");
         try {
@@ -41,7 +41,7 @@ public class ReentrantSynchronizedLock {
      * fun1 end
      */
     public static void main(String[] args) {
-        ReentrantSynchronizedLock r = new ReentrantSynchronizedLock();
+        ReentrantSynchronizedLock1 r = new ReentrantSynchronizedLock1();
         new Thread(r::fun1).start();
     }
 }
