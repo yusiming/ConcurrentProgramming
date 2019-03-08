@@ -9,25 +9,23 @@ import java.io.PrintWriter;
 import java.math.BigInteger;
 
 /**
- * 无状态的servlet，是线程安全的
- * 所有的状态（变量）都是局部的
- * 只会被线程自己使用，都只会
- * 存储到线程私有的局部变列表中
+ * 一个非线程安全统计访问次数的servlet
  *
  * @author yusiming
- * @date 2019/3/8 16:38
+ * @date 2019/3/8 16:50
  */
-public class StatelessFactorizer extends HttpServlet {
-    /**
-     * 提供因式分解的服务的get方法
-     */
+public class UnsafeCountingFactorizer extends HttpServlet {
+    // count代表了对象的状态
+    private long count = 0;
+
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getParameter("number");
-        BigInteger bigInteger = extractFromRequest(request);
-        if (bigInteger != null) {
-            BigInteger[] factors = factor(bigInteger);
-            responseToClient(response, factors);
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // ++ 操作并非原子操作
+        count++;
+        BigInteger value = extractFromRequest(req);
+        if (value != null) {
+            BigInteger[] factors = factor(value);
+            responseToClient(resp, factors);
         }
     }
 
