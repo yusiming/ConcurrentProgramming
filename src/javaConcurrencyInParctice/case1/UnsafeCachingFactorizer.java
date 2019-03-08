@@ -18,8 +18,8 @@ import java.util.concurrent.atomic.AtomicReference;
  * @date 2019/3/8 17:08
  */
 public class UnsafeCachingFactorizer extends HttpServlet {
-    AtomicReference<BigInteger> lastNumber = new AtomicReference<>();
-    AtomicReference<BigInteger[]> lastFactors = new AtomicReference<>();
+    private final AtomicReference<BigInteger> lastNumber = new AtomicReference<>();
+    private final AtomicReference<BigInteger[]> lastFactors = new AtomicReference<>();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
