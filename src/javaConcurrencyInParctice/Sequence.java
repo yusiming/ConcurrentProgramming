@@ -1,11 +1,14 @@
 package javaConcurrencyInParctice;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 /**
  * @author yusiming
  * @date 2019/3/8 13:45
  */
 public class Sequence {
     private int value;
+    private AtomicLong count = new AtomicLong(0);
 
     /**
      * 非同步方法，有可能会引发多线程执行时的问题：
@@ -25,5 +28,14 @@ public class Sequence {
      */
     public synchronized int getNext() {
         return value++;
+    }
+
+    /**
+     * 如果只需要对单个变量的操作实现原子性的话
+     * 使用原子变量(ava.util.concurrent.atomic包中的类)是非常合适的
+     * 原子变量类使用的是CAS来实现的
+     */
+    public long getCount() {
+        return count.incrementAndGet();
     }
 }
