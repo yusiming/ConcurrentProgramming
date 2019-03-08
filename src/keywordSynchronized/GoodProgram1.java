@@ -3,8 +3,8 @@ package keywordSynchronized;
 /**
  * 使用synchronized关键字来保证某一段代码的执行的原子性和可见性
  *
- * @Auther yusiming
- * @Date 2019/2/28 19:42
+ * @author yusiming
+ * @date 2019/2/28 19:42
  */
 public class GoodProgram1 {
     private int count = 10;

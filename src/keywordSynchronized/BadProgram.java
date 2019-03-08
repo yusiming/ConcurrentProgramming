@@ -3,8 +3,8 @@ package keywordSynchronized;
 /**
  * 多线程带来的问题：线程之前竞争临界资源时，如果不加以控制，就会有可能造成错误
  *
- * @Auther yusiming
- * @Date 2019/2/28 19:27
+ * @author yusiming
+ * @date 2019/2/28 19:27
  */
 public class BadProgram {
     private int count = 10;

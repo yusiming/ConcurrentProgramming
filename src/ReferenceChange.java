@@ -4,8 +4,8 @@
  * 但是如果o变成另外一个对象，则锁定的对象发生改变
  * 应该避免将锁定对象的引用变成另外的对象
  *
- * @Auther yusiming
- * @Date 2019/2/28 22:26
+ * @author yusiming
+ * @date 2019/2/28 22:26
  */
 public class ReferenceChange {
     private volatile Object o = new Object();

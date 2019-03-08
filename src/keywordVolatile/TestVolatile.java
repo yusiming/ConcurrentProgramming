@@ -4,8 +4,8 @@ package keywordVolatile;
  * volatile关键字能够保证可见性：
  * 即一个线程修改了一个被volatile修饰的变量的值，其他线程都可以立即知道
  *
- * @Auther yusiming
- * @Date 2019/2/28 21:37
+ * @author yusiming
+ * @date 2019/2/28 21:37
  */
 public class TestVolatile {
     private /*volatile*/ boolean running = true;

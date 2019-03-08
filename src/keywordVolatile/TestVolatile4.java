@@ -6,8 +6,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 使用原子类，即一系列的AtomXXX类也可以保证原子性
  * 而且一般情况下效率会更高
  *
- * @Auther yusiming
- * @Date 2019/2/28 22:21
+ * @author yusiming
+ * @date 2019/2/28 22:21
  */
 public class TestVolatile4 {
     private AtomicInteger count = new AtomicInteger(0);

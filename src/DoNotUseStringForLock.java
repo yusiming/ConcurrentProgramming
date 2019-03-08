@@ -4,8 +4,8 @@
  * 如果你在自己的代码中也锁定了"Hello",这时候就有可能发生非常诡异的死锁阻塞，
  * 因为你的程序和你用到的类库不经意间使用了同一把锁
  *
- * @Auther yusiming
- * @Date 2019/2/28 22:40
+ * @author yusiming
+ * @date 2019/2/28 22:40
  */
 public class DoNotUseStringForLock {
     private String s1 = "hello";

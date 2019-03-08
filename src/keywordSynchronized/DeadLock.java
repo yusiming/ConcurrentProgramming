@@ -3,8 +3,8 @@ package keywordSynchronized;
 /**
  * 模拟死锁
  *
- * @Auther yusiming
- * @Date 2019/2/28 20:59
+ * @author yusiming
+ * @date 2019/2/28 20:59
  */
 public class DeadLock {
     private final Object o1 = new Object();

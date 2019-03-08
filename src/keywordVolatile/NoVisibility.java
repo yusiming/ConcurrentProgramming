@@ -3,8 +3,8 @@ package keywordVolatile;
 /**
  * 有关内存可见性的另一个例子
  *
- * @Auther yusiming
- * @Date 2019/3/2 09:25
+ * @author yusiming
+ * @date 2019/3/2 09:25
  */
 public class NoVisibility {
     private static int number;

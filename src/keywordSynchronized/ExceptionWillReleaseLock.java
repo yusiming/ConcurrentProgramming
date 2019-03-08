@@ -7,8 +7,8 @@ package keywordSynchronized;
  * 在第一个线程中抛出异常，其他线程就会进入同步代码区，有可能会访问到异常产生时的数据。
  * 因此要非常小心的处理同步业务逻辑中的异常，出现异常时需要做一些处理，比如事物回滚
  *
- * @Auther yusiming
- * @Date 2019/2/28 21:24
+ * @author yusiming
+ * @date 2019/2/28 21:24
  */
 public class ExceptionWillReleaseLock {
     private int count = 0;

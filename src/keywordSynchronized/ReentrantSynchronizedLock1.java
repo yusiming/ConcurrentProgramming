@@ -7,8 +7,8 @@ package keywordSynchronized;
  * 如果方法已被锁定，那么当前线程就会堵塞，这也有可能会造成死锁
  * synchronized获得的锁是可重入的
  *
- * @Auther yusiming
- * @Date 2019/2/28 20:50
+ * @author yusiming
+ * @date 2019/2/28 20:50
  */
 public class ReentrantSynchronizedLock1 {
     public synchronized void fun1() {

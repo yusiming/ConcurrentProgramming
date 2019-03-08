@@ -4,8 +4,8 @@
  * 但是不保证在方法执行不被剥夺cpu的使用，如果在写方法中，对某个数据赋值之前，被剥夺了使用权，
  * 此时如果去调用读方法，值还未改变，着就会造成两次读取的值不一致
  *
- * @Auther yusiming
- * @Date 2019/2/28 20:30
+ * @author yusiming
+ * @date 2019/2/28 20:30
  */
 public class Account {
     private String name;

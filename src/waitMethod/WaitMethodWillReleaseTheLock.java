@@ -3,8 +3,8 @@ package waitMethod;
 /**
  * Object中的wait方法会释放当前锁
  *
- * @Auther yusiming
- * @Date 2019/2/28 20:27
+ * @author yusiming
+ * @date 2019/2/28 20:27
  */
 public class WaitMethodWillReleaseTheLock {
     public synchronized void fun1() {

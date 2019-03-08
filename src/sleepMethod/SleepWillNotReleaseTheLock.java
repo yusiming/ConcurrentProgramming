@@ -4,8 +4,8 @@ package sleepMethod;
  * sleep()方法不会释放锁，所以要小心了，
  * 如果某个线程带着锁永久的沉睡了，那么其他的线程永远都得不到执行机会
  *
- * @Auther yusiming
- * @Date 2019/2/28 20:09
+ * @author yusiming
+ * @date 2019/2/28 20:09
  */
 public class SleepWillNotReleaseTheLock {
     public synchronized void fun1() {

@@ -4,8 +4,8 @@ package keywordSynchronized;
  * 同步方法和非同步方法可以同时调用，
  * 调用非同步方法时不需要得到某个堆中的对象的锁，直接调用
  *
- * @Auther yusiming
- * @Date 2019/2/28 20:02
+ * @author yusiming
+ * @date 2019/2/28 20:02
  */
 public class TwoKindOfMethod {
     public synchronized void fun1() {

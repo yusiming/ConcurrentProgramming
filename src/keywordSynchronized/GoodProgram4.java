@@ -1,8 +1,8 @@
 package keywordSynchronized;
 
 /**
- * @Auther yusiming
- * @Date 2019/2/28 19:56
+ * @author yusiming
+ * @date 2019/2/28 19:56
  */
 public class GoodProgram4 {
     private static int count = 10;

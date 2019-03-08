@@ -5,8 +5,8 @@ package keywordSynchronized;
  * 当子类继承父类的同步方法时，可以选择不使用synchronized关键字，
  * 也就是说，子类方法可以不用是同步方法
  *
- * @Auther yusiming
- * @Date 2019/2/28 21:07
+ * @author yusiming
+ * @date 2019/2/28 21:07
  */
 public class ReentrantSynchronizedLock2 {
     synchronized void fun() {

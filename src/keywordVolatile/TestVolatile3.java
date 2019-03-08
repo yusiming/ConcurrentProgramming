@@ -3,8 +3,8 @@ package keywordVolatile;
 /**
  * 使用synchronized关键字来保证原子性
  *
- * @Auther yusiming
- * @Date 2019/2/28 22:18
+ * @author yusiming
+ * @date 2019/2/28 22:18
  */
 public class TestVolatile3 {
     private volatile int count = 0;
